@@ -1,17 +1,16 @@
-[package]
-name = "offchain-computing"
-version = "0.1.0"
-edition = "2021"
+[workspace]
+members = ["embedded-database", "offchain-server"]
+resolver = "2"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[dependencies]
+[workspace.dependencies]
 anyhow = "1.0.83"
 axum = "0.7.5"
 bytes = "1.6.0"
 futures-lite = "2.3.0"
-iroh = "0.15.0"
-iroh-net = "0.15.0"
-serde = { version = "1.0.201", features = ["derive"] }
-serde_json = "1.0.117"
-tokio = { version = "1.37.0", features = ["full"] }
+iroh = "0.18.0"
+iroh-net = "0.18.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.38.0", features = ["full"] }
+surrealdb = { version = "1.5.3", features = ["kv-mem", "kv-rocksdb"] }

@@ -1,0 +1,15 @@
+[package]
+name = "offchain-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow =  {workspace = true}
+axum =  {workspace = true}
+bytes =  {workspace = true}
+futures-lite =  {workspace = true}
+iroh =  {workspace = true}
+iroh-net =  {workspace = true}
+serde =  {workspace = true}
+serde_json =  {workspace = true}
+tokio =  {workspace = true}

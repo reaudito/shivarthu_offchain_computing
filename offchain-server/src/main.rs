@@ -1,9 +1,9 @@
 use axum::{extract::Extension, routing::get, Router};
 use std::sync::Arc;
 
-use offchain_computing::app_state::AppState;
+use offchain_server::app_state::AppState;
 
-use offchain_computing::functions::test_functions::get_user;
+use offchain_server::functions::test_functions::get_user;
 
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {

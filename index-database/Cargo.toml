@@ -1,0 +1,9 @@
+[package]
+name = "index-database"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+subxt = { workspace = true }
+tokio = { workspace = true }
+hex = { workspace = true }
